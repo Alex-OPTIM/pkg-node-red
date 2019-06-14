@@ -1,0 +1,25 @@
+{
+  "name": "pkg-node-red",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./node_modules/node-red/red.js",
+    "build:osx": "pkg . --targets node10-mac-x64 -o ./node-red-osx_x64",
+    "build:linux": "pkg . --targets node10-linux-x64 -o ./node-red-linux_x64",
+    "build:win": "pkg . --targets node10-win-x64 -o ./node-red-win_x64",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "node-red": "^0.20.5",
+    "pkg": "^4.4.0"
+  },
+  "pkg": {
+    "assets": [
+      "node_modules/**/*"
+    ]
+  },
+  "bin": "./node_modules/node-red/red.js"
+}
