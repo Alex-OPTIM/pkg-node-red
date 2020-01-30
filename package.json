@@ -13,7 +13,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "node-red": "^0.20.5",
+    "node-red": "^0.20.8",
     "pkg": "^4.4.0"
   },
   "pkg": {
